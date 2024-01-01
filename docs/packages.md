@@ -28,3 +28,16 @@ This repository aims to serve as an open-box solution for building React Single 
             eslint-plugin-react-hooks@latest \
             eslint-plugin-storybook@latest \
             eslint-plugin-typescript-sort-keys@latest
+
+- [configure shadcn cli](https://ui.shadcn.com/docs/cli). After adhering to the default guidelines, we update `aliases` part of the `components.json` file as follows:
+
+  ```json
+  {
+    "aliases": {
+      "components": "shared/components",
+      "utils": "shared/components/ui/tailwind"
+    }
+  }
+  ```
+
+  This modification marks the components library under shared/components and the utilities under shared/components/ui/tailwind.

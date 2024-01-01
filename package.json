@@ -4,7 +4,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@radix-ui/react-accordion": "^1.1.2",
+    "@radix-ui/react-progress": "^1.0.3",
     "@tanstack/react-query": "^5.17.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
     "eslint": "^8.56.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-config-standard-with-typescript": "^43.0.0",
@@ -16,10 +20,13 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.6.15",
     "eslint-plugin-typescript-sort-keys": "^3.1.0",
+    "lucide-react": "^0.303.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1",
     "react-scripts": "5.0.1",
+    "tailwind-merge": "^2.2.0",
+    "tailwindcss-animate": "^1.0.7",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -28,7 +35,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint ./src --fix"
+    "lint": "eslint ./src --fix",
+    "generate:component": "npx shadcn-ui@latest add"
   },
   "browserslist": {
     "production": [
