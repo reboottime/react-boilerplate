@@ -1,0 +1,7 @@
+# This line indicates that this EditorConfig file should be considered the root configuration and should stop looking for additional configuration files in parent directories. This is often used to define the project-specific settings.
+root=true
+
+[*.{js,jsx,ts,tsx,json}]
+indent_style = space
+indent_size = 2
+tab_width = 2

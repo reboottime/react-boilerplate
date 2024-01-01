@@ -41,3 +41,11 @@ This repository aims to serve as an open-box solution for building React Single 
   ```
 
   This modification marks the components library under shared/components and the utilities under shared/components/ui/tailwind.
+
+- why husky and lint-staged
+  - Why this solution
+    - `eslint` reads all your file under `.eslintrc.js` root folder. That might take a lot of time for large project.
+    - lint-staged combined solution only reads changed files
+  - lint-staged and husky as a combined solution
+    - [husky improves your commits and more 🐶 woof!](<[husky](https://www.npmjs.com/package/husky)>)
+    - [lint-staged](https://www.youtube.com/watch?v=_ssKvmZqSnk&ab_channel=MonsterlessonsAcademy). apply to changed file(s) only

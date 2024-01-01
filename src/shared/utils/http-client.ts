@@ -17,10 +17,10 @@ export default class HttpClient {
     this.instance.interceptors.response.use(
       (res) => res.data,
       (error: AxiosError) => {
-        // Where you can add customized logic on error response,
-        // For example, log out user automatically if the http status means user's authentication token has expired
+        // Here, you can incorporate custom error response logic,
+        // such as automatically logging out the user if the HTTP status indicates an expired authentication token.
         return Promise.reject(error);
-      }
+      },
     );
   }
 
