@@ -1,8 +1,9 @@
 import { lazy, Suspense } from 'react';
 import { Navigate, useRoutes } from 'react-router-dom';
 
-const RegisterPage = lazy(() => import('./register'));
-const LoginPage = lazy(() => import('./login'));
+const BillingPage = lazy(() => import('./billing'));
+const DeveloperPage = lazy(() => import('./developer'));
+const ProfilePage = lazy(() => import('./profile'));
 
 // routing configuration example: https://app.cal.com/auth/login
 export default function AuthPages() {
@@ -10,19 +11,23 @@ export default function AuthPages() {
     {
       path: '',
       index: true,
-      element: <Navigate to='login' />,
+      element: <Navigate to='profile' />,
     },
     {
-      path: 'register',
-      element: <RegisterPage />,
+      path: 'billing',
+      element: <BillingPage />,
     },
     {
-      path: 'login',
-      element: <LoginPage />,
+      path: 'developer',
+      element: <DeveloperPage />,
+    },
+    {
+      path: 'profile',
+      element: <ProfilePage />,
     },
     {
       path: '*',
-      element: <Navigate to='login' />,
+      element: <Navigate to='profile' />,
     },
   ]);
 

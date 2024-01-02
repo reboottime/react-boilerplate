@@ -19,6 +19,7 @@ This repository aims to serve as an open-box solution for building React Single 
 
             yarn add eslint@latest \
             eslint-config-react-app@latest \
+            eslint-import-resolver-typescript \
             eslint-config-standard-with-typescript@latest \
             eslint-plugin-import@latest \
             eslint-plugin-jsx-a11y@latest \

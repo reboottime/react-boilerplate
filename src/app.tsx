@@ -1,6 +1,9 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 
-import AuthPages from './pages/auth';
+import AuthRoute from './pages/auth';
+import BookingsRoute from './pages/bookings';
+import SettingsRoute from './pages/settings';
+import AppLayout from './shared/components/app-layout';
 
 export default function App() {
   return (
@@ -9,8 +12,18 @@ export default function App() {
       {/* Yet, if you do not want follow that pattern, naming app as prefix is a good way too */}
       <Route element={<Navigate to='/auth' />}
         path='/' />
-      <Route element={<AuthPages />}
+      <Route element={<AuthRoute />}
         path='/auth/*' />
+      <Route element={<AppLayout />}
+        path='/app'>
+        <Route element={<Navigate to='settings' />}
+          index
+          path='' />
+        <Route element={<SettingsRoute />}
+          path='settings/*' />
+        <Route element={<BookingsRoute />}
+          path='bookings/*' />
+      </Route>
     </Routes>
   );
 }
