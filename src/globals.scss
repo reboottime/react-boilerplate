@@ -98,3 +98,45 @@ img {
     --ring: 0 0% 83.1%;
   }
 }
+
+@layer components {
+  /* Where we can extract some resuable utilities styles based on fundamental  utilities*/
+  .card {
+    @apply bg-white p-6 rounded-md  border shadow-md;
+  }
+
+  /* Styling for button component */
+  .button {
+    // Basic style for button
+    @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-1 disabled:pointer-events-none disabled:opacity-50;
+
+    // button color variants
+    &--primary {
+      @apply bg-blue-500 text-white hover:bg-blue-500/90;
+    }
+    &--danger {
+      @apply bg-red-500 text-white hover:bg-red-500/90;
+    }
+    &--outline {
+      @apply border border-input bg-background hover:bg-accent hover:text-accent-foreground;
+    }
+    &--link {
+      @apply text-blue-500 underline-offset-4 hover:underline;
+    }
+
+    // button size variants
+    &--sm {
+      @apply h-9 rounded-sm px-3;
+    }
+    &--md {
+      @apply h-10 px-4 py-2;
+    }
+    &--lg {
+      @apply h-11 rounded-lg px-8;
+    }
+
+    &--icon {
+      @apply h-10 w-10;
+    }
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import App from './app';
-import './globals.css';
+import './globals.scss';
 import reportWebVitals from './reportWebVitals';
 import AppProviders from './shared/components/app-providers';
 
