@@ -49,6 +49,3 @@ export class Logger {
 const defaultLogger = Logger.create();
 
 export default defaultLogger;
-
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-type ArgsType = any[];
