@@ -50,3 +50,6 @@ This repository aims to serve as an open-box solution for building React Single 
   - lint-staged and husky as a combined solution
     - [husky improves your commits and more 🐶 woof!](<[husky](https://www.npmjs.com/package/husky)>)
     - [lint-staged](https://www.youtube.com/watch?v=_ssKvmZqSnk&ab_channel=MonsterlessonsAcademy). apply to changed file(s) only
+- storybook configuration
+  - [integrate tailwind with storybook](https://storybook.js.org/recipes/tailwindcss)
+  - [how-to-resolve-aliases-in-storybook](https://stackoverflow.com/questions/66444895/how-to-resolve-aliases-in-storybook)

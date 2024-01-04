@@ -3,7 +3,7 @@ import { useMutation, useQuery } from '@tanstack/react-query';
 import BookingsService, {
   IBooking,
   IBookingsQuery,
-} from 'pages/bookings/services/bookings.services';
+} from '@pages/bookings/services/bookings.services';
 
 const bookingService = new BookingsService();
 

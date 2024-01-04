@@ -1,0 +1,51 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* button theme */
+  .button--primary {
+    @apply bg-blue-500
+          text-white
+          hover:bg-blue-500/90
+          border-blue-600;
+  }
+  .button--danger {
+    @apply bg-red-500
+          text-white
+          hover:bg-red-500/90;
+  }
+  .button--outline {
+    @apply border;
+  }
+  .button--link {
+    @apply text-blue-500
+          underline-offset-4
+          hover:underline;
+  }
+
+  /* button size */
+  .button--sm {
+    @apply h-8
+          rounded-sm
+          text-sm
+          px-3;
+  }
+  .button--md {
+    @apply h-10
+          px-4
+          rounded-md
+          py-2;
+  }
+  .button--lg {
+    @apply h-11
+          rounded-lg
+          text-lg
+          px-8;
+  }
+  /* icon button */
+  .button--icon {
+    @apply h-10
+           text-sm
+          w-10;
+  }
+}

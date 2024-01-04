@@ -20,7 +20,15 @@ module.exports = {
   root: true,
   // https://stackoverflow.com/questions/55198502/using-eslint-with-typescript-unable-to-resolve-path-to-module
   settings: {
+    "@typescript-eslint/parser": [
+      ".ts",
+      ".tsx"
+    ],
     "import/resolver": {
+      "alias": {
+        "map": [["@ui", "./src/shared/components/ui"]],
+        "extensions": [".ts", ".tsx"]
+      },
       node: {
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       },

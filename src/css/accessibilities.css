@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind utilities;
+
+@layer base {
+  @media (hover: hover) {
+    /* Apply different styles for devices that support hover */
+    *:focus-visible {
+      transition: outline 0.2s ease-in-out;
+      @apply focus-visible:outline-none
+      focus-visible:ring-1
+      focus-visible:ring-blue-500
+      focus-visible:ring-offset-1;
+    }
+  }
+
+  /* Apply different styles for devices that do not support hover */
+  @media (hover: none) {
+    *:focus-visible {
+      outline: none;
+    }
+  }
+}

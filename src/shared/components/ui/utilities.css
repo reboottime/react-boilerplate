@@ -1,0 +1,21 @@
+/** customize css utilities used for ui components **/
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Base styles for buttons */
+  .button {
+    @apply capitalize
+      inline-flex
+      items-center
+      justify-center
+      whitespace-nowrap
+      rounded-md
+      text-sm
+      font-medium
+      transition-colors
+      disabled:pointer-events-none
+      disabled:opacity-50;
+  }
+}

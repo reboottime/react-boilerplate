@@ -1,4 +1,4 @@
-import HttpClient from 'shared/utils/http-client';
+import HttpClient from '@utils/http-client';
 
 export interface IBooking extends RecordType {
   id: string;
