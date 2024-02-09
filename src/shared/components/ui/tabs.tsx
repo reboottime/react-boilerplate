@@ -11,7 +11,7 @@ const TabsList = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <TabsPrimitive.List
     className={cn(
-      'tab-buttons-list',
+      'inline-flex h-10 items-center justify-center rounded-md  p-1',
       className,
     )}
     ref={ref}
@@ -27,7 +27,11 @@ const TabsTrigger = React.forwardRef<
   return (
     <TabsPrimitive.Trigger
       className={cn(
-        'button tab-button',
+        'button',
+        'px-3 py-1.5 border  transition-all',
+        'hover:bg-white',
+        "[state='active']:text-white hover:bg-blue-500/90",
+        'not(:last-child):mr-2',
         className,
       )}
       ref={ref}
