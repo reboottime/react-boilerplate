@@ -2,10 +2,10 @@ import * as Collapsible from '@radix-ui/react-collapsible';
 import React, { useMemo } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
-import { clsx } from 'shared/components/ui/utils';
+import { cn } from 'shared/components/ui/utils';
 
 // A good practice on grouping class names
-const NAV_ITEM_DEFAULT_CLASSNAMES = clsx(
+const NAV_ITEM_DEFAULT_CLASSNAMES = cn(
   'block capitalize py-1 pl-2  w-full',
   'hover:bg-blue-100 hover:text-blue-800',
   'focus:bg-blue-100 focus:text-blue-800',
@@ -15,7 +15,7 @@ export function NavMenuItem({ label, to, icon, className }: NavMenuItemProps) {
   return (
     <NavLink
       className={({ isActive }) =>
-        clsx(NAV_ITEM_DEFAULT_CLASSNAMES, className, {
+        cn(NAV_ITEM_DEFAULT_CLASSNAMES, className, {
           'text-blue-600 bg-blue-100': isActive,
           'font-semibold': isActive,
         })
@@ -53,7 +53,7 @@ export default function NavMenu({
         aria-current={defaultOpen
           ? 'page'
           : undefined}
-        className={clsx(NAV_ITEM_DEFAULT_CLASSNAMES, 'py-0', {
+        className={cn(NAV_ITEM_DEFAULT_CLASSNAMES, 'py-0', {
           'text-blue-600': defaultOpen,
           'font-semibold': defaultOpen,
         })}
