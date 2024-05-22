@@ -1,5 +1,4 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { toast } from 'sonner';
 
 import AuthRoute from './pages/auth';
 import BookingsRoute from './pages/bookings';

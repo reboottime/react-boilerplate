@@ -7,8 +7,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:typescript-sort-keys/recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
     'plugin:react-hooks/recommended',
   ],
   parser: '@typescript-eslint/parser',
@@ -16,7 +14,7 @@ module.exports = {
     project: true,
     tsconfigRootDir: __dirname,
   },
-  plugins: ['@typescript-eslint', 'jsx-a11y'],
+  plugins: ['jsx-a11y'],
   root: true,
   // https://stackoverflow.com/questions/55198502/using-eslint-with-typescript-unable-to-resolve-path-to-module
   settings: {
